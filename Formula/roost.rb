@@ -6,7 +6,7 @@ class Roost < Formula
   license "Apache-2.0"
   head "https://github.com/AvesAlight/roost.git", branch: "main"
 
-  depends_on "bun"
+  depends_on "oven-sh/bun/bun"
   depends_on "tmux"
   depends_on "AvesAlight/tap/ergo"
 
