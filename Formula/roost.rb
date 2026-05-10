@@ -13,7 +13,9 @@ class Roost < Formula
   def install
     # Install entire plugin tree under libexec; bin/roost relies on a
     # plugin-rooted layout (bin/, src/, prompts/, .claude-plugin/ siblings).
-    libexec.install Dir["*"]
+    # Include dotfiles — .claude-plugin/plugin.json and .mcp.json are required
+    # for Claude Code to load the plugin.
+    libexec.install Dir["*", ".[!.]*"]
 
     # Install bun deps inside libexec so the MCP server can `import` them
     # at runtime. Done at install-time, not test-time.
