@@ -1,8 +1,8 @@
 class Roost < Formula
   desc "IRC-based multi-agent coordination for Claude Code"
   homepage "https://github.com/AvesAlight/roost"
-  url "https://github.com/AvesAlight/roost/archive/refs/tags/v0.9.6.tar.gz"
-  sha256 "28d16659d82f3d4883bbccb7a7673a14f89bd186e484f700afa501a3f538ec03"
+  url "https://github.com/AvesAlight/roost/archive/refs/tags/v0.9.7.tar.gz"
+  sha256 "5161eccc3166a3d98a3254ee4b6a612f10d26ac9effcb42a24fcb2e01f32d634"
   license "Apache-2.0"
   head "https://github.com/AvesAlight/roost.git", branch: "main"
 
